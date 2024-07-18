@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  border: 1px solid #000;
+  pointer-events: none;
+  user-select: none;  
+}
+
+.hashmark {
+  position: absolute;
+  background: #000;
+  width: 2px;
+  height: 10px;
+}
+
+.hashmark:before {
+  content: attr(data-value);
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.hashmark p{
+  position: absolute;
+  top: -28px;
+  left: 10px;
+}

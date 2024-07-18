@@ -1,0 +1,250 @@
+.builder{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    width: min(1000px, 80%);
+    margin: 20px auto;
+    position: relative;
+}
+
+.builder h1{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.clearResume{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.clearResume svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputGroup label{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.inputGroup input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    max-width: 450px;
+}
+
+.inputList{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputList .inputGroup{
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inputList .inputGroup input{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 400px;
+}
+
+.inputList .inputGroup button{
+    padding: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.educationInput{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.inputList button{
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.removeButton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basicList .addButton{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.experienceInput{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.activityInput{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.activityDetail{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.activityInput .addDetailButton{
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.skills.inputList{
+    margin: 0;
+}
+
+.skills.inputList .addSkillButton{
+    background-color: lightgreen;
+    max-width: none;
+    width: 150px;
+}
+
+.awardInput{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.generateButton{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: lightblue;
+    cursor: pointer;
+    margin: 20px auto;
+    margin-top: 30px;
+}
+
+.exportJSON{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color:lightseagreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+.exportJSON svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.importJSON{
+    position: absolute;
+    right: 140px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color:lightseagreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+.importJSON svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.importJSON label{
+    cursor: pointer;
+}
+
+.importJSON input{
+    display: none;
+}
+
+.projectItem{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.projectItem .inputGroup{
+    flex-direction: column;
+}
+
+.projectItem .inputGroup input{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.projectItem .removeButton{
+    background-color: #ff0000;
+    border-radius: 50%;
+}

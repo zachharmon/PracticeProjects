@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Tic Tac Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This implementation of tic tac toe was build with a React frontend and a Flask (Python) backend. It is meant to be simplistic and light weight. The game is played in the browser and has 3 modes:
+- Single player (against an AI)
+- Local Multiplayer (against another player on the same computer)
+- Online Multiplayer (against another player on a different computer)
 
-## Available Scripts
+## Installation
+To run the game, ensure you have the proper environment to run a React app and a Flask app. To install the necessary dependencies, run the following commands in the root directory of the project:
+```
+npm install
+pip install -r requirements.txt
+```
 
-In the project directory, you can run:
+To simply run the game, run the following commands in the root directory of the project:
+```
+npm start
+```
+And in a separate terminal:
+```
+python app.py
+```
+This will start the React app on `localhost:3000` and the Flask app on `localhost:5000`. The game can be played by navigating to `localhost:3000` in a web browser. In order to play online multiplayer, the Flask app must be running on a server that is accessible to both players. This can be done by altering the frontend code to point to the correct server and then hosting the Flask app on a server or by playing on the same network with the server running on one of the player's computers and the other player altering the frontend code to point to the server's local IP address. For simplicity, the code is currently set up to play online multiplayer on the same computer in different tabs.
 
-### `npm start`
+## Usage
+The game is played by clicking on the square you would like to place your piece. The game will alternate between X and O until the game is won or tied. The game will then display the winner and allow the players to play again.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Online Matchmaking
+The online multiplayer mode is set up to allow players to matchmake with each other. When a player clicks the "Online Multiplayer" button, they will be placed in a queue to be matched with another player. Once a match is found, the game will begin. If a player leaves the game before it is over, the other player will be declared the winner.

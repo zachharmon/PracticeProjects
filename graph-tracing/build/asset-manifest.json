@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tools/graph-tracing/static/css/main.ed0e473d.css",
+    "main.js": "/tools/graph-tracing/static/js/main.37a17445.js",
+    "static/js/453.5a439a88.chunk.js": "/tools/graph-tracing/static/js/453.5a439a88.chunk.js",
+    "index.html": "/tools/graph-tracing/index.html",
+    "main.ed0e473d.css.map": "/tools/graph-tracing/static/css/main.ed0e473d.css.map",
+    "main.37a17445.js.map": "/tools/graph-tracing/static/js/main.37a17445.js.map",
+    "453.5a439a88.chunk.js.map": "/tools/graph-tracing/static/js/453.5a439a88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed0e473d.css",
+    "static/js/main.37a17445.js"
+  ]
+}

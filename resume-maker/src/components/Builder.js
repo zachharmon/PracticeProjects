@@ -4,9 +4,12 @@ import EducationInput from './EducationInput';
 import ExperienceInput from './ExperienceInput';
 import ActivityInput from './ActivityInput';
 import AwardInput from './AwardInput';
+import { useNavigate } from 'react-router-dom';
 
 
 function Builder() {
+
+    const nav = useNavigate();
 
     const [resume, setResume] = React.useState(localStorage.getItem('resume') ? JSON.parse(localStorage.getItem('resume')) : 
         {
@@ -295,7 +298,7 @@ function Builder() {
 
             <button className='generateButton'
                 onClick={() => {
-                    window.open('/output?fontSizeIncrease=2', '_blank')
+                    window.open('/tools/resume-builder?fontSizeIncrease=2#/output', '_blank')
                 }}
             >
                 Generate Resume

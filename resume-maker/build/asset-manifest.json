@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tools/resume-builder/static/css/main.67694603.css",
+    "main.js": "/tools/resume-builder/static/js/main.5a4e5333.js",
+    "static/js/453.2118c39c.chunk.js": "/tools/resume-builder/static/js/453.2118c39c.chunk.js",
+    "static/media/TimesNewRomanBold.ttf": "/tools/resume-builder/static/media/TimesNewRomanBold.52cae610797e70864671.ttf",
+    "static/media/TimesNewRoman.ttf": "/tools/resume-builder/static/media/TimesNewRoman.f4e3a464f960c9dea950.ttf",
+    "static/media/TimesNewRomanItalic.ttf": "/tools/resume-builder/static/media/TimesNewRomanItalic.99dbcd867cf1e851fa3c.ttf",
+    "index.html": "/tools/resume-builder/index.html",
+    "main.67694603.css.map": "/tools/resume-builder/static/css/main.67694603.css.map",
+    "main.5a4e5333.js.map": "/tools/resume-builder/static/js/main.5a4e5333.js.map",
+    "453.2118c39c.chunk.js.map": "/tools/resume-builder/static/js/453.2118c39c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67694603.css",
+    "static/js/main.5a4e5333.js"
+  ]
+}
